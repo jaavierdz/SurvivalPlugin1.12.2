@@ -1,3 +1,15 @@
-name: SurvivalPrueba
+name: SurvivalPlugin
 version: '${project.version}'
 main: org.javierdz.survivalprueba.SurvivalPrueba
+author: Javierdz
+commands:
+  help:
+    description: Show help
+    usage: /help
+
+  s:
+    description: Teleport a player to you
+    usage: /s <player>
+  survival:
+    description: Main plugin command
+    usage: /survival
