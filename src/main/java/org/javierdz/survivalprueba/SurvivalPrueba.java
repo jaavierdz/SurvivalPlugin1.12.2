@@ -13,6 +13,7 @@ public final class SurvivalPrueba extends JavaPlugin {
         Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor("&bPlugin version: " + getDescription().getVersion()));
         Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor("&bPlugin author: &6" + getDescription().getAuthors()));
         registerCommands();
+        registerEvents();
 
     }
 
@@ -34,5 +35,8 @@ public final class SurvivalPrueba extends JavaPlugin {
         getCommand("s").setExecutor(new org.javierdz.survivalprueba.commands.s());
         getCommand("events").setExecutor(new org.javierdz.survivalprueba.commands.events());
         getCommand("survival").setExecutor(new org.javierdz.survivalprueba.commands.survival());
+    }
+    public void registerEvents(){
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.deathListener(), this);
     }
 }
