@@ -1,0 +1,3 @@
+name: SurvivalPrueba
+version: '${project.version}'
+main: org.javierdz.survivalprueba.SurvivalPrueba
