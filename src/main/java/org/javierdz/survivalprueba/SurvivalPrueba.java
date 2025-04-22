@@ -24,7 +24,12 @@ public final class SurvivalPrueba extends JavaPlugin {
     @Override
 
     public void onLoad() {
-        Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor("&ePlugin loaded!"));
+        if(Bukkit.getOnlinePlayers().isEmpty()) {
+            Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor("&ePlugin loaded!"));
+        }else{
+            onReload();
+        }
+
     }
     public void onReload() {
         // TODO: Usar el metodo
