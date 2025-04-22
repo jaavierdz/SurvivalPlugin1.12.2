@@ -16,7 +16,9 @@ public class s implements CommandExecutor {
         if (commandSender.hasPermission("survivalprueba.s")){
             Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tp " + commandSender.getName() + " " + strings[0]);
         }
-        commandSender.sendMessage(chatHandler.getColor("&cYou do not have permission to use this command."));
+        else {
+            commandSender.sendMessage(chatHandler.getColor("&cYou do not have permission to use this command."));
+        }
         return false;
     }
 }
