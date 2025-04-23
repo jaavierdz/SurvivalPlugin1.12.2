@@ -6,10 +6,10 @@
 
   <groupId>org.javierdz</groupId>
   <artifactId>SurvivalPrueba</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
 
-  <name>SurvivalPrueba</name>
+  <name>SurvivalPlugin</name>
 
   <properties>
     <java.version>1.8</java.version>
