@@ -15,8 +15,9 @@ public class events implements CommandExecutor {
         if (commandSender.hasPermission("survivalplugin.events.command")){
             commandSender.sendMessage(chatHandler.getColor("&6&lCurrent (Registered) Events:&r"));
             commandSender.sendMessage(chatHandler.getColor("&cNone."));
+        } else {
+            commandSender.sendMessage(chatHandler.getColor("&cYou do not have permission to use this command."));
         }
-        commandSender.sendMessage(chatHandler.getColor("&cYou do not have permission to use this command."));
         return false;
     }
 }

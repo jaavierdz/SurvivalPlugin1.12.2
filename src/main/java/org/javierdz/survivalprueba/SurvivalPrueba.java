@@ -49,5 +49,13 @@ public final class SurvivalPrueba extends JavaPlugin {
     }
     public void registerEvents(){
         Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.deathListener(), this);
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.denseFogEvent(this), this);
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.forestLuckEvent(this), this);
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.earthquakeEvent(this), this);
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.nightInvasionEvent(this), this);
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.nightRaidEvent(this), this);
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.meteorRainEvent(this), this);
+        Bukkit.getPluginManager().registerEvents(new org.javierdz.survivalprueba.events.bloodMoonEvent(this), this);
+
     }
 }
