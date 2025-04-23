@@ -31,7 +31,7 @@ public class bloodMoonEvent implements Listener {
                         if (!lunaActiva) {
                             lunaActiva = true;
                             for (Player player : world.getPlayers()) {
-                                player.sendMessage("§4¡Luna Sangrienta! Los mobs no se quemarán y el PvP está activado.");
+                                player.sendMessage("§4Blood Moon! Mobs will not burn under the sun.");
                             }
                         }
                     } else {

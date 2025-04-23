@@ -1,5 +1,5 @@
 name: SurvivalPlugin
-version: 1.1
+version: 1.2
 main: org.javierdz.survivalprueba.SurvivalPrueba
 author: Javierdz
 commands:
@@ -21,11 +21,11 @@ commands:
 
   gms:
     description: Set gamemode to survival
-    usage: /gms <player>
+    usage: /gms {player}
 
   gmc:
     description: Set gamemode to creative
-    usage: /gmc <player>
+    usage: /gmc {player}
 
   bc:
     description: Broadcast player's coordinates to the server

@@ -27,7 +27,7 @@ public class denseFogEvent implements Listener {
                 if (random.nextInt(1000) < 15) {
                     for (Player player : Bukkit.getOnlinePlayers()) {
                         player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 20 * 10, 1));
-                        player.sendMessage("§7Una niebla espesa cubre la zona...");
+                        player.sendMessage("§7A dense fog has appeared!");
                     }
                 }
             }

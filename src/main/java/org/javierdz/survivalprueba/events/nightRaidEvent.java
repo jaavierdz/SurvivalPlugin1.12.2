@@ -28,10 +28,10 @@ public class nightRaidEvent implements Listener {
                         for (Player player : world.getPlayers()) {
                             for (int i = 0; i < 5; i++) {
                                 Zombie zombie = (Zombie) world.spawnEntity(player.getLocation(), EntityType.ZOMBIE);
-                                zombie.setCustomName("§cZombi élite");
+                                zombie.setCustomName("§cZombie Raider");
                                 zombie.setCustomNameVisible(true);
                             }
-                            player.sendMessage("§c¡Oleada nocturna! ¡Prepárate para luchar!");
+                            player.sendMessage("§cNight Raid! Prepare to fight!");
                         }
                     }
                 }
