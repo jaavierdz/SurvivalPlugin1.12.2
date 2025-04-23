@@ -1,7 +1,7 @@
 package org.javierdz.survivalprueba;
 
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.FileConfiguration;
+
 import org.bukkit.plugin.java.JavaPlugin;
 import org.javierdz.survivalprueba.handlers.chatHandler;
 
@@ -9,16 +9,12 @@ import org.javierdz.survivalprueba.handlers.chatHandler;
 public final class SurvivalPrueba extends JavaPlugin {
 
 
-    FileConfiguration config = this.getConfig();
-    public String prefix = chatHandler.getColor(this.getConfig().getString("prefix"));
     @Override
     public void onEnable() {
 
-        config.addDefault("prefix", "&6&l[&bSurvivalPlugin&6&l] &r");
-        config.options().copyDefaults(true);
-        Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor(prefix + "&a Plugin enabled!"));
-        Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor(prefix + "&b Plugin version: " + getDescription().getVersion()));
-        Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor(prefix + "&b Plugin author: &6" + getDescription().getAuthors()));
+        Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor( "&aPlugin enabled!"));
+        Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor("&bPlugin version: " + getDescription().getVersion()));
+        Bukkit.getServer().getConsoleSender().sendMessage(chatHandler.getColor("&bPlugin author: &6" + getDescription().getAuthors()));
         registerCommands();
         registerEvents();
 
