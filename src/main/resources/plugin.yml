@@ -9,7 +9,24 @@ commands:
 
   s:
     description: Teleport a player to you
-    usage: /s <player>
+    usage: /s
+
   survival:
     description: Main plugin command
     usage: /survival
+
+  events:
+    description: Show events
+    usage: /events
+
+  gms:
+    description: Set gamemode to survival
+    usage: /gms <player>
+
+  gmc:
+    description: Set gamemode to creative
+    usage: /gmc <player>
+
+  bc:
+    description: Broadcast player's coordinates to the server
+    usage: /bc

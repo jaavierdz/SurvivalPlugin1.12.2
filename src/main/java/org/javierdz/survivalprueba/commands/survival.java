@@ -13,7 +13,7 @@ public class survival implements CommandExecutor {
             commandSender.sendMessage("This command can only be used by players.");
             return true;
         }
-        if (commandSender.hasPermission("survivalprueba.survivalOP")) {
+        if (commandSender.isOp()) {
             Player player = (Player) commandSender;
             player.sendMessage(chatHandler.getColor("&6&lSurvivalPlugin Administration:&r"));
             player.sendMessage(chatHandler.getColor("&4/setsurvival <player> - Set the player to survival mode"));
