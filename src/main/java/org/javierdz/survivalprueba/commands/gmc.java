@@ -20,6 +20,6 @@ public class gmc implements CommandExecutor {
         } else {
             commandSender.sendMessage(chatHandler.getColor("&cYou do not have permission to use this command."));
         }
-        return false;
+        return true;
     }
 }

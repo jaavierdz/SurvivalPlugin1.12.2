@@ -24,6 +24,6 @@ public class survival implements CommandExecutor {
         } else {
             commandSender.sendMessage("You do not have permission to use this command.");
         }
-        return false;
+        return true;
     }
 }

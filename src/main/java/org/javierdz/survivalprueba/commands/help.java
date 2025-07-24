@@ -17,6 +17,6 @@ public class help implements CommandExecutor {
         player.sendMessage("/help - Show this help message");
         player.sendMessage("/survival - Main command for SurvivalPlugin");
         player.sendMessage("/s <player> - Teleport player to you");
-        return false;
+        return true;
     }
 }

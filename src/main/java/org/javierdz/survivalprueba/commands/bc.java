@@ -15,6 +15,6 @@ public class bc implements CommandExecutor {
         }
         Player player = (Player) commandSender;
         player.getServer().broadcastMessage(chatHandler.getColor("&a" + player.getName() + "'s coordinates are " + player.getLocation().getBlockX() + " " + player.getLocation().getBlockY() + " " + player.getLocation().getBlockZ()));
-        return false;
+        return true;
     }
 }
