@@ -14,7 +14,11 @@ public class bc implements CommandExecutor {
             return true;
         }
         Player player = (Player) commandSender;
-        player.getServer().broadcastMessage(chatHandler.getColor("&a" + player.getName() + "'s coordinates are " + player.getLocation().getBlockX() + " " + player.getLocation().getBlockY() + " " + player.getLocation().getBlockZ()));
-        return false;
+        if (Player.hasPermission("survival.bc){
+            player.getServer().broadcastMessage(chatHandler.getColor("&a" + player.getName() + "'s coordinates are " + player.getLocation().getBlockX() + " " + player.getLocation().getBlockY() + " " + player.getLocation().getBlockZ()));
+            return true;
+        } else {
+            commandSender.sendMessage("No tienes permiso para usar este comando");
+            return false;
     }
 }
